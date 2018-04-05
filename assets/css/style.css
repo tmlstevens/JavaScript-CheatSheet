@@ -1,6 +1,6 @@
 body    {
-    background-color: rgba(0, 0, 0, .03);
-    /* background-color: rgb(243, 243, 243); */
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: rgb(211, 210, 210);
 
 }
 
@@ -10,7 +10,8 @@ body    {
     margin-right: 10vw;
     margin-left: 10vw;
     padding: 2rem;
-    background-color: rgb(237, 245, 252);
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    background-color: rgba(200, 252, 200, 0.301);
     border: steelblue!;
     border-width: thick!;
     /* background-color: rgb(227, 239, 250 */
@@ -19,6 +20,25 @@ body    {
 .btn-link   {
     color: steelblue; 
     text-decoration-line: none;
+}
+
+.btn-lnk    {
+    color: rgb(0, 0, 0);
+    text-decoration-line: none;
+}
+
+.w3 {
+    margin-bottom: 4rem;
+}
+
+.btn-lnk:hover    {
+    color: rgb(41, 138, 29);
+    text-decoration-line: none;
+}
+
+.btn-mth    {
+    background-color: rgb(233, 233, 233);
+    color: black;
 }
 
 .indent   {
@@ -34,9 +54,41 @@ ul  {
 
 .collapse   {
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card-hdr   {
     font: bold;
     color: rgb(180, 180, 180);
+}
+
+.about-prop-meth    {
+    margin-left: 2rem;
+}
+
+.line-item  {
+    margin-bottom: 0.75rem;
+    margin-left: 2rem;
+}
+samp    {
+    font-size: 0.9rem;
+}
+
+var    {
+    font-size: 0.9rem;
+}
+
+code    {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: green
+}
+
+.read-more {
+    margin-top: 1.25rem;
+    margin-bottom: 0.25;
+}
+
+.quiet-link {
+    color: dimgrey;
 }
