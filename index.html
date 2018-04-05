@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container" id="main">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Document Object Model (DOM)</h2>
+                    <p class="indent">HTML DOM is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects, so that programming languages can connect to the page. A Web page is a document that can be displayed a) in the browser window, and b) as the html source; it's the same document in both cases. The DOM is an object-oriented representation of the web page, a standard for how to get, change, add, or delete html elements - with a scripting language such as JavaScript.
+                    </p>
+                    <ul>Using the HTML DOM JavaScript can:
+                        <li>change, remove, and add all HTML elements and attributes in a page</li>
+                        <li>change all CSS styles in the page</li>
+                        <li>react to existing HTML events iand create new HTML events in the page</li>
+                    </ul>
+                    
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h1 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="card-hdr">HTML DOM / </span>Window</button>
+                                </h1>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The window object represents an open window in a browser.  If a document contains frames (iframe tags), the browser creates one window object for the html document, and one additional window object for each frame. No public standard applies to the Window object.<br />
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/obj_window.asp" target="_blank">Window Object Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- <div id="accordion"> -->
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span class="card-hdr">HTML DOM / </span>Document</button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>When an html document is loaded into browser, it becomes a document object. The document object is the root node of the html document and the "owner" of all other nodes. The document object provides properties and methods to access all node objects, from within JavaScript. The document is a part of the Window object and can be accessed as window.document.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank">Document Object Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span class="card-hdr">HTML DOM / </span>Element</button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The Element object represents an html element. Element objects can have child nodes of type element nodes, text nodes, or comment nodes. A NodeList object represents a list of nodes, like an html element's collection of child nodes. Elements can also have attributes.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/dom_obj_element.asp" target="_blank">Element Object Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><span class="card-hdr">HTML DOM / </span>Attribute</button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The html DOM attribute object represents an html attribute, which always belongs to a html element. The NamedNodeMap object represents an unordered collection of an element's attribute nodes. Nodes in a NamedNodeMap can be accessed by name or index. Attributes are attribute nodes.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/dom_obj_attribute.asp" target="_blank">Attribute Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><span class="card-hdr">HTML DOM / </span>Events</button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Events allow JavaScript to register different event handlers on elements in an HTML document. Events are normally used in combination with functions, and the function is not executed before the event occurs (such as when a user clicks a button).
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">Events, Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"><span class="card-hdr">HTML DOM / </span>Console</button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The Console object provides access to the browser's debugging console.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/obj_console.asp" target="_blank">Console Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"><span class="card-hdr">HTML DOM / </span>Style</button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The Style object represents an individual style statement. The Style object can be accessed from the head section of the document, or from specific HTML element(s).
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="_blank">Style Properties</a>
+                                </div>
+                            </div>
+                         </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"><span class="card-hdr">HTML DOM </span>Screen</button>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The screen object contains information about the visitor's screen. No public standard applies to the screen object.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/obj_screen.asp" target="_blank">Screen Properties</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine"><span class="card-hdr">HTML DOM </span>History</button>
+                                </h5>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The history object contains the URLs visited by the user (within a browser window). The history object is part of the window object and is accessed through the window.history property. No public standard that applies to the history object.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/obj_history.asp" target="_blank">History Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen"><span class="card-hdr">HTML DOM </span>Location</button>
+                                </h5>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The location object contains information about the current URL. The location object is part of the window object and is accessed through the window.location property. No public standard applies to the location object.
+                                    </p>see W3 Schools:
+                                    <a href="https://www.w3schools.com/jsref/obj_location.asp" target="_blank">Location Properties and Methods</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <button type="button" class="btn btn-info bg-primary" data-toggle="collapse" data-target="#demo">Window Object</button>
+                    <div class="collapse" id="demo" >
+                        <p>The window object represents an open window in a browser.  If a document contains frames (iframe tags), the browser creates one window object for the html document, and one additional window object for each frame. Note: There is no public standard that applies to the Window object, but all major browsers support it.<br />see W3 Schools:  <a href="https://www.w3schools.com/jsref/obj_window.asp">Window Object Properties and Methods</a>
+                        </p>
+                    </div> -->
+                
+                
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
